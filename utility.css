@@ -1,0 +1,43 @@
+*{
+  color: #808080;
+  font-size: .8rem;
+  font-family: 'Hubballi', cursive;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  margin-bottom: 15px;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover{
+  color: white;
+}
+
+a:hover > i{
+  color: white;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.bigger-font{
+  font-size: .9rem;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.white{
+  color: white;
+}

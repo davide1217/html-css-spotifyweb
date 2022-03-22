@@ -2,11 +2,98 @@
 #lateral-bar{
   height: calc(100vh - 90px);
   width: 200px;
+  background-color: black;
+}
+
+#lateral-bar > *{
+  width: 80%;
+  margin: 0 auto;
 }
 
 #lateral-bar > div{
   width: 100%;
 }
+
+/* top */
+#lateral-bar .top div:first-of-type{
+  margin: 20px 0;
+}
+
+#lateral-bar i{
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+#lateral-bar li{
+  display: flex;
+}
+
+#lateral-bar li a{
+  display: flex;
+  align-items: center;
+}
+
+#lateral-bar .uppercase.white{
+  margin-bottom: 10px;
+}
+
+#playlist li:first-of-type a{
+  font-size: 1rem;
+}
+
+#playlist li:first-of-type i{
+  color: black;
+  background-color: #808080;
+  padding: 5px 7px;
+}
+
+#playlist li:first-of-type a:hover > i{
+  background-color: white;
+}
+
+#lateral-bar .top ul li > .active{
+  border: 1px solid lime;
+  margin-left: -20px;
+  margin-right: 18px;
+  height: 30px;
+}
+/* /top
+
+
+/* bottom */
+#lateral-bar .bottom > *{
+  display: flex;
+  align-items: center;
+}
+
+#lateral-bar .bottom i{
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#installa-app i{
+  font-size: .6rem;
+  border: .5px solid #808080;
+  padding: 0.5px 1.5px;
+}
+
+#installa-app{
+  padding-bottom: 7px;
+  border-bottom: 1px solid #808080;
+}
+
+#user{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#user i{
+  color: white;
+  background-color: #808080;
+  padding: 0px 3px 4px 3px;
+}
+/* /bottom */
+
 /* /lateral-bar */
 
 

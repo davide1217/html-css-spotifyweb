@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="global.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Document</title>
 </head>
@@ -17,15 +17,55 @@
 
   <section class="clearfix">
       <!-- lateral-bar -->
-      <div id="lateral-bar" class="debug float-left flex column jus-space-between">
+      <div id="lateral-bar" class="float-left flex column jus-space-between">
 
-        <section class="top debug h100">
-        
+        <!-- top -->
+        <section class="top">
+
+          <div><img class="w-70" src="img/logo.svg" alt=""></div>
+
+          <ul>
+            <li>
+              <span class="active"></span>
+              <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+
+            <li>
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Cerca</a>
+            </li>
+
+            <li>
+              <a href="#"><i class="fa-solid fa-grip-lines-vertical"> \</i>La tua libreria</a>
+            </li>
+          </ul>
+
+          <div class="uppercase bold white bigger-font">playlist</div>
+
+          <ul id="playlist">
+            <li><a href="#"><i class="fa-solid fa-plus"></i> Crea Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+          </ul>
+
         </section>
-      
-        <section class="bottom debug h100">
-        
+        <!-- /top -->
+
+        <!-- bottom -->
+        <section class="bottom">
+          <div id="installa-app">
+            <a href="#"><i class="fa-solid fa-arrow-down"></i>Installa app</a>
+          </div>
+
+          <div id="user" class="bold white bigger-font">
+            <i class="fa-solid fa-user"></i> John Doe
+          </div>
         </section>
+        <!-- /bottom -->
 
       </div>
       <!-- /lateral-bar -->
@@ -35,7 +75,7 @@
       <main class="debug float-left">
 
         <!-- fixed part -->
-        <section class="debug fixed">
+        <section class="debug po-fixed">
 
         </section>
         <!-- /fixed part -->
@@ -70,7 +110,7 @@
 
 
 <!-- footer -->
-  <footer class="debug fixed">
+  <footer class="debug po-fixed">
     <div class="debug flex jus-space-between ali-flex-center">
       <div class="left debug w-10"></div>
       <div class="center debug w-30"></div>
