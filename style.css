@@ -1,0 +1,45 @@
+/* lateral-bar */
+#lateral-bar{
+  height: calc(100vh - 90px);
+  width: 200px;
+}
+
+#lateral-bar > div{
+  width: 100%;
+}
+/* /lateral-bar */
+
+
+/* main */
+main{
+  width: calc(100vw - 200px);
+  height: calc(100vh - 90px);
+  overflow-y: auto;
+}
+/* fixed part */
+main .fixed{
+  width: 100%;
+  height: 90px;
+}
+/* /fixed part */
+
+
+/* menu */
+main nav{
+  margin-top: 90px;
+}
+/* /menu */
+/* /main */
+
+
+/* footer */
+footer{
+  height: 90px;
+  width: 100%;
+}
+
+footer div{
+  height: 100%;
+}
+/* /footer */
+
