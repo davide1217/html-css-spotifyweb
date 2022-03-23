@@ -99,7 +99,7 @@
 
 /* main */
 main{
-  width: calc(100vw - 200px);
+  width: calc(100% - 200px);
   height: calc(100vh - 90px);
   overflow-y: auto;
 }
@@ -159,9 +159,50 @@ div.active-nav{
   margin-top: 30px;
 }
 
-.container section .w-100 > div{
-  flex: 0 1 
-  margin-right: 5px;
+.card-container{
+  flex-basis: calc(100% / 6 - 10px);
+  margin-right: 10px;
+  padding-top: calc(100% / 6 - 10px);
+  background-position: center;
+  background-size: contain;
+}
+
+.overlay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.overlay i{
+  border: 3px solid white;
+  border-radius: 50%;
+  padding: 3px 3px;
+}
+
+#metal{
+  background-image: url(img/metal_lifting.jpg);
+}
+
+#stranger{
+  background-image: url(img/stranger.jpeg);
+}
+
+#quiet-place{
+  background-image: url(img/aquietplace.jpeg);
+}
+
+#split{
+  background-image: url(img//split.jpeg);
+}
+
+#wellness{
+  background-image: url(img/cure.jpeg);
+}
+
+#sinister{
+  background-image: url(img/sinister.jpeg);
 }
 /* /recently played */
 

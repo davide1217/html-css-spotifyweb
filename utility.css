@@ -23,6 +23,10 @@ h2{
   color: white;
 }
 
+.playlist{
+  margin-bottom: 20px;
+}
+
 a:hover{
   color: white;
 }
