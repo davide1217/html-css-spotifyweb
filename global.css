@@ -70,8 +70,16 @@
   justify-content: space-between;
 }
 
-.ali-space.between{
+.jus-space-around{
+  justify-content: space-around;
+}
+
+.ali-space-between{
   align-items: space-between;
+}
+
+.ali-space-around{
+  justify-content: space-around;
 }
 
 .ali-end{

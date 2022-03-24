@@ -39,7 +39,7 @@
             </li>
           </ul>
 
-          <div class="uppercase bold white bigger-font">playlist</div>
+          <div class="uppercase  white bigger-font">playlist</div>
 
           <ul id="playlist">
             <li><a href="#"><i class="fa-solid fa-plus"></i> Crea Playlist</a></li>
@@ -61,7 +61,7 @@
             <a href="#"><i class="fa-solid fa-arrow-down"></i>Installa app</a>
           </div>
 
-          <div id="user" class="bold white bigger-font">
+          <div id="user" class=" white bigger-font">
             <i class="fa-solid fa-user"></i> John Doe
           </div>
         </section>
@@ -76,7 +76,7 @@
 
         <!-- fixed part -->
         <section class="po-fixed flex jus-end ali-center">
-          <a class="uppercase bold white" href="#">effettua l&apos;upgrade</a>
+          <a class="uppercase  white" href="#">effettua l&apos;upgrade</a>
         </section>
         <!-- /fixed part -->
 
@@ -180,14 +180,18 @@
 
             <div class="container-row flex">
               <div class="flex column">
-                <a href="#" class="card-container" id="release-radar"></a>
+                <a href="#" class="card-container" id="release-radar">
+                  <span class="overlay"><i class="fa-solid fa-play"></i></span>
+                </a>
                 <div class="description">
                   <h3>Release Radar</h3>
                 </div>
               </div>
 
               <div class="flex column">
-                <a href="#" class="card-container" id="mix-1"></a>
+                <a href="#" class="card-container" id="mix-1">
+                  <span class="overlay"><i class="fa-solid fa-play"></i></span>
+                </a>
                 <div class="description">
                   <h3>Daily Mix 1<h3>
                 </div>
@@ -205,14 +209,18 @@
 
             <div class="container-row flex">
               <div class="flex column">
-                <a href="#" class="card-container" id="del-ray"></a>
+                <a href="#" class="card-container" id="del-ray">
+                  <span class="overlay"><i class="fa-solid fa-play"></i></span>
+                </a>
                 <div class="description">
                   <h3>Lana del Ray</h3>
                 </div>
               </div>
 
               <div class="flex column">
-                <a href="#" class="card-container" id="einaudi"></a>
+                <a href="#" class="card-container" id="einaudi">
+                  <span class="overlay"><i class="fa-solid fa-play"></i></span>
+                </a>
                 <div class="description">
                   <h3>Ludovico Einaudi<h3>
                 </div>
@@ -230,12 +238,56 @@
 
 
 <!-- footer -->
-  <footer class="debug">
-    <div class="debug flex jus-space-between ali-flex-center">
-      <div class="left debug w-10"></div>
-      <div class="center debug w-30"></div>
-      <div class="right debug w-10"></div>
-    </div>
+  <footer class="flex jus-space-between">
+      <!-- left -->
+      <aside class="left ali-center flex">
+        
+          <img src="img/sinister.jpeg" alt="">
+          <div id="playing-description">
+            <div class="white">Sinister</div>
+            <a href="#">Brano nome</a>
+          </div>
+          <a href="#"><i class="fa-solid fa-heart"></i></a>
+          <a href="#"><i class="fa-solid fa-folder"></i></a>
+
+        </aside>
+      <!-- /left -->
+
+      <!-- center -->
+      <div class="center w-50 flex column jus-center ali-center">
+        <div id="commands">
+          <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+          <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
+          <a href="#"><i class="fa-solid fa-play"></i></a>
+          <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+          <a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+        </div>
+
+        <div class="w-100 flex jus-center ali-center">
+          <div>0&colon;25</div>
+          <div  class="barra">
+            <div class="overlay">
+              <div class="cursor"></div>
+            </div>
+          </div>
+          <div>4&colon;35</div>
+        </div>
+      </div>
+      <!-- /center -->
+
+      <!-- right -->
+      <aside class="right flex jus-end ali-center">
+        <i class="fa-solid fa-ellipsis-vertical"></i><i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-desktop"></i>
+        <i class="fa-solid fa-volume-high"></i>
+        <div  class="barra">
+          <div class="overlay">
+            <div class="cursor"></div>
+          </div>
+        </div>
+      </aside>
+      <!-- /right -->
+
   </footer>
 <!-- /footer -->
 

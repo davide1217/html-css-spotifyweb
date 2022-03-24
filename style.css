@@ -3,6 +3,7 @@
   height: calc(100vh - 90px);
   width: 200px;
   background-color: black;
+  overflow: hidden;
 }
 
 #lateral-bar > *{
@@ -236,8 +237,13 @@ div.active-nav{
 
 
 /* popolar */
+#popolar{
+  margin-bottom: 20px;
+}
+
 #popolar .card-container{
   border-radius: 50%;
+  overflow: hidden;
 }
 
 #del-ray{
@@ -257,11 +263,123 @@ div.active-nav{
 /* footer */
 footer{
   height: 90px;
-  width: 100%;
+  padding: 0 10px;
+  background-color: #282828;
 }
 
-footer div{
-  height: 100%;
+/* left */
+footer .left img{
+  width: 20%;
 }
+
+#playing-description{
+  margin: 0 30px 0 10px;
+}
+
+#playing-description a{
+  font-size: .7rem;
+}
+
+#playing-description a:hover{
+  text-decoration: underline;
+}
+
+footer .left i{
+  -webkit-text-stroke: 1px #808080;
+  color: #282828;
+}
+
+footer .left i:hover{
+  -webkit-text-stroke: 1px white;
+  color: #282828;
+}
+/* /left */
+
+
+/* center */
+.center i{
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+
+.center .fa-play{
+  padding: 3px 4px 3px 5px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+#commands{
+  margin-bottom: 15px;
+}
+
+.center .fa-play:hover{
+  padding: 5px 6px 5px 8px;
+  margin: 0 7.5px 0 7.5px;
+}
+
+.barra{
+  width: 80%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 25px;
+  margin: 0 20px 0 20px;
+  position: relative;
+}
+
+.barra .overlay{
+  position: absolute;
+  width: 20%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 25px;
+  display: block;
+}
+
+.cursor{
+  position: absolute;
+  right: 0;
+  transform: translate(0, -40%);
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  display: none;
+}
+.barra .overlay:hover{
+  background-color: lime;
+  cursor: pointer;
+}
+
+.barra .overlay:hover .cursor{
+  display: block;
+}
+/* /center */
+
+
+/* right */
+footer .right i{
+color: white;
+}
+
+footer .right .fa-ellipsis-vertical{
+  margin-right: 0 ;
+}
+
+footer .right .fa-bars{
+  margin-left: 0;
+}
+
+footer .right .barra{
+  margin: 0;
+}
+
+footer .right .cursor{
+  width: 10px;
+  height: 10px;
+  transform: translate(0, -30%);
+}
+/* /right */
+
 /* /footer */
 
