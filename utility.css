@@ -5,6 +5,22 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.uppercase{
+  text-transform: uppercase;
+}
+
+.bigger-font{
+  font-size: .9rem;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.white{
+  color: white;
+}
+
 ul{
   list-style: none;
 }
@@ -21,6 +37,12 @@ a{
 h2{
   font-size: 1.5rem;
   color: white;
+  margin-bottom: 5px;
+}
+
+h3{
+  font-size: 1rem;
+  color: white; 
 }
 
 .playlist{
@@ -35,18 +57,27 @@ a:hover > i{
   color: white;
 }
 
-.uppercase{
-  text-transform: uppercase;
+.container section{
+  margin-top: 30px;
 }
 
-.bigger-font{
-  font-size: .9rem;
+.playlist-type{
+  margin-bottom: 20px;
 }
 
-.bold{
-  font-weight: bold;
+.description{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
 }
 
-.white{
-  color: white;
+.card-container{
+  width: 100%;
+  padding-top: 100%;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

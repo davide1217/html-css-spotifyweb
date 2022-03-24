@@ -61,6 +61,14 @@
 
 
 /* bottom */
+#lateral-bar .bottom{
+  position: fixed;
+  width: calc(200px * 80 / 100);
+  bottom: 90px;
+  left: calc(200px * 10 /100);
+  background-color: black;
+}
+
 #lateral-bar .bottom > *{
   display: flex;
   align-items: center;
@@ -102,6 +110,7 @@ main{
   width: calc(100% - 200px);
   height: calc(100vh - 90px);
   overflow-y: auto;
+  background-color: #141922;
 }
 
 
@@ -109,6 +118,7 @@ main{
 main .po-fixed{
   width: calc(100% - 200px);
   height: 90px;
+  background-color: rgba(0, 0, 0, .5);
 }
 
 main .po-fixed a{
@@ -130,7 +140,7 @@ main .po-fixed a:hover{
 
 /* container */
 main .container{
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 /* menu */
@@ -155,30 +165,37 @@ div.active-nav{
 
 
 /* recently played */
-.container section{
-  margin-top: 30px;
-}
-
-.card-container{
+.container-row > *{
   flex-basis: calc(100% / 6 - 10px);
   margin-right: 10px;
   padding-top: calc(100% / 6 - 10px);
-  background-position: center;
-  background-size: contain;
+  position: relative;
 }
 
 .overlay{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
   background-color: rgba(0, 0, 0, .5);
+  display: none;
 }
 
 .overlay i{
-  border: 3px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5rem;
+  border: 5px solid white;
   border-radius: 50%;
-  padding: 3px 3px;
+  padding: 5px 7px 5px 10px;
+}
+
+.card-container:hover .overlay{
+  display: block;
 }
 
 #metal{
@@ -206,6 +223,31 @@ div.active-nav{
 }
 /* /recently played */
 
+
+/* creato per te */
+#release-radar{
+  background-image: url(img/radar.jpeg);
+}
+
+#mix-1{
+  background-image: url(img/mixdaily.jpeg);
+}
+/* /creato per te */
+
+
+/* popolar */
+#popolar .card-container{
+  border-radius: 50%;
+}
+
+#del-ray{
+  background-image: url(img/youg.jpeg);
+}
+
+#einaudi{
+  background-image: url(img/einaudi.jpeg);
+}
+/* /popolar */
 
 /* /container */
 
