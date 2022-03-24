@@ -53,6 +53,10 @@ a:hover{
   color: white;
 }
 
+a:hover span{
+  color: white;
+}
+
 a:hover > i{
   color: white;
 }

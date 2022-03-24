@@ -120,6 +120,7 @@ main .po-fixed{
   width: calc(100% - 200px);
   height: 90px;
   background-color: rgba(0, 0, 0, .5);
+  z-index: 999;
 }
 
 main .po-fixed a{
@@ -406,7 +407,7 @@ footer .right .cursor{
   #lateral-bar img{
     display: none;
   }
-  
+
   main{
     width: calc(100% - 50px);
   }
