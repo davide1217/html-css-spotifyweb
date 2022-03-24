@@ -383,3 +383,98 @@ footer .right .cursor{
 
 /* /footer */
 
+/* media query */
+@media screen and (max-width: 800px) {
+  .container-row > *{
+    flex-basis: calc(100% / 4 - 10px);
+    padding-top: calc(100% / 4 - 10px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-row > *{
+    flex-basis: calc(100% / 2 - 10px);
+    padding-top: calc(100% / 2 - 10px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #lateral-bar{
+    width: 50px;
+  }
+
+  #lateral-bar img{
+    display: none;
+  }
+  
+  main{
+    width: calc(100% - 50px);
+  }
+
+  main .po-fixed{
+    width: calc(100% - 50px);
+  }
+
+  #lateral-bar > *{
+    width: 50%;
+    margin: 0 auto;
+  } 
+
+  #lateral-bar .bottom{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #lateral-bar .top li{
+    display: flex;
+    justify-content: center;
+  }
+
+  #installa-app{
+    display: flex;
+    justify-content: center;
+  }
+
+  #user{
+    display: flex;
+    justify-content: center;
+  }
+
+  #lateral-bar i{
+    margin-right: 0;
+  }
+
+  #lateral-bar .fa-house{
+    margin-right: 0;
+  }
+
+  #lateral-bar .bottom i{
+    margin-right: 0;
+  }
+
+  #lateral-bar ul span{
+    display: none;
+  }
+
+  #lateral-bar .uppercase.white{
+    display: none;
+  }
+
+  #playlist{
+    display: none;
+  }
+
+  #lateral-bar .bottom{
+    width: calc(50px * 80 / 100);
+    left: calc(50px * 10 /100);
+  }
+
+  #lateral-bar .bottom span{
+    display: none;
+  }
+
+  #installa-app{
+    border-bottom: 0;
+  }
+}
+/* /media query */
